@@ -10,7 +10,7 @@ export async function getDogs() {
         .select('*');
 
     // and return the response (checking for errors)
-    return checkError(response.body);
+    return checkError(response);
 }
 
 export async function getDog(id) {
@@ -21,7 +21,7 @@ export async function getDog(id) {
         .match({ id: id })
         .single();
     // and return the response (checking for errors)
-    return checkError(response.body);    
+    return checkError(response);    
 }
 
 function checkError({ data, error }) {
