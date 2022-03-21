@@ -7,7 +7,7 @@ export async function getDogs() {
     // from the dogs table, select all items
 
     // and return the response (checking for errors)
-    return checkError(response);    
+    return checkError(response);
 }
 
 export async function getDog(id) {
